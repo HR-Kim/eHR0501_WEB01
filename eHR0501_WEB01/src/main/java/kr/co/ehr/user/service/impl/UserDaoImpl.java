@@ -5,11 +5,11 @@
  * @Description : 
  * @Modification Information
  * @
- * @  ¼öÁ¤ÀÏ      ¼öÁ¤ÀÚ              ¼öÁ¤³»¿ë
+ * @  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½      ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½              ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  * @ ---------   ---------   -------------------------------
- * @ 2019-09-02           ÃÖÃÊ»ý¼º
+ * @ 2019-09-02           ï¿½ï¿½ï¿½Ê»ï¿½ï¿½ï¿½
  *
- * @author °³¹ßÇÁ·¹ÀÓ¿÷Å© ½ÇÇàÈ¯°æ °³¹ßÆÀ
+ * @author ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¿ï¿½Å© ï¿½ï¿½ï¿½ï¿½È¯ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  * @since 2019-09-02 
  * @version 1.0
  * @see
@@ -54,11 +54,15 @@ public class UserDaoImpl implements WorkDiv {
 
 	@Override
 	public DTO get_selectOne(DTO dto) {
-		UserVO outVO=new UserVO();
-		outVO.setName("SpringMVC");
-		outVO.setAge("8");
-		outVO.setSex("M");
-		outVO.setTel("010-1234-8888");
+		UserVO inVO = (UserVO) dto;
+		LOG.debug("==========================");
+		LOG.debug("=inVO="+inVO);
+		LOG.debug("==========================");
+		UserVO outVO=inVO;
+//		outVO.setName("SpringMVC");
+//		outVO.setAge("8");
+//		outVO.setSex("M");
+//		outVO.setTel("010-1234-8888");
 		LOG.debug("==========================");
 		LOG.debug("=@Repository="+outVO);
 		LOG.debug("==========================");
